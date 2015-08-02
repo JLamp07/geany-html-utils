@@ -1,0 +1,37 @@
+[editor]
+line_wrapping=false
+line_break_column=72
+auto_continue_multiline=true
+
+[file_prefs]
+final_new_line=false
+ensure_convert_new_lines=false
+strip_trailing_spaces=false
+replace_tabs=false
+
+[indentation]
+indent_width=2
+indent_type=1
+indent_hard_tab_width=8
+detect_indent=false
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=Geany HTML Utils
+base_path=/media/nhohb07/DATA/soft/IDE/geany/plugins/geany-html-utils
+description=
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=72
+
+[files]
+current_page=0
+FILE_NAME_0=1725;C;0;EUTF-8;1;1;0;%2Fmedia%2Fnhohb07%2FDATA%2Fsoft%2FIDE%2Fgeany%2Fplugins%2Fgeany-html-utils%2FGeanyHtmlUtils.c;0;2
+FILE_NAME_1=2004;C;0;EUTF-8;1;1;0;%2Fmedia%2Fnhohb07%2FDATA%2Fsoft%2FIDE%2Fgeany%2Fplugins%2Fgeany-smarty%2FGeanySmarty.c;0;2
+FILE_NAME_2=135;PHP;0;EUTF-8;1;1;0;%2Fmedia%2Fnhohb07%2FDATA%2Fdata%2Fwww%2Ftest%2Findex.php;0;2
+FILE_NAME_3=0;HTML;0;EUTF-8;1;1;0;%2Fmedia%2Fnhohb07%2FDATA%2Fdata%2Fwww%2Ftest%2Ftest.html;0;2
+
+[VTE]
+last_dir=/home/nhohb07
