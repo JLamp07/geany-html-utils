@@ -220,8 +220,13 @@ static void on_document_open(GObject *obj, GeanyDocument *doc, gpointer user_dat
 	data->doc = doc;
 	data->sci = doc->editor->sci;
 	plugin_signal_connect(geany_plugin, G_OBJECT(data->sci), "key-press-event", FALSE, G_CALLBACK(on_key_press), data);
-	//plugin_signal_connect(geany_plugin, G_OBJECT(data->sci), "sci-notify", FALSE, G_CALLBACK(on_sci_notify), data);
 }
+
+PluginCallback plugin_callbacks[] = {
+	{ "document-open",  (GCallback) &on_document_open, FALSE, NULL },
+	{ "document-new",   (GCallback) &on_document_open, FALSE, NULL },
+	{ NULL, NULL, FALSE, NULL }
+};
 	
 void plugin_init(GeanyData *data){
 	int i;
@@ -233,10 +238,9 @@ void plugin_init(GeanyData *data){
 }
 
 void plugin_cleanup(void){
-	//g_free(smarty_data->config_file);
 	g_free(plugin_data);
 }
 
 void plugin_help(void){
-	utils_open_browser("https://github.com/JLamp07/geany-smarty");
+	utils_open_browser("https://github.com/JLamp07/geany-html-utils");
 }
